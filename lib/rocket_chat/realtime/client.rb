@@ -7,6 +7,7 @@ require 'websocket/driver'
 
 require 'rocket_chat/realtime/methods/auth'
 require 'rocket_chat/realtime/methods/message'
+require 'rocket_chat/realtime/methods/livechat'
 require 'rocket_chat/realtime/subscriptions/room'
 
 module RocketChat
@@ -20,6 +21,7 @@ module RocketChat
       include EventEmitter
       include Methods::Auth
       include Methods::Message
+      include Methods::Livechat
       include Subscriptions::Room
 
       # @since 0.1.0
